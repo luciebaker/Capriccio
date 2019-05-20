@@ -89,11 +89,21 @@ header.section-header {
   padding-left: 1.5rem;
 }
 
-/* Footer section */
+/* Footer and copyright section */
 .header {
   padding-bottom: 15px;
 }
 
 .header-footer {
   padding-bottom: 35px;
+}
+
+.list-unstyled {
+  line-height: 1.7rem;
+}
+
+.copyright-section {
+  padding-top: 50px;
+  padding-bottom: 10px;
+  background-color: #516073;
 }
