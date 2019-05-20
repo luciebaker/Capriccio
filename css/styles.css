@@ -18,6 +18,10 @@ h3 {
   font-size: 1.4rem;
 }
 
+h4 {
+  font-size: 1.2rem;
+}
+
 p {
   /* font-family: 'Libre Baskerville', serif; */
   line-height: 1.7;
@@ -39,13 +43,16 @@ header.section-header {
 
 /* Placeholders */
 .top {
-  height: 200px;
+  height: 600px;
+
   background-color: #516073;
 }
 
 .about {
   background-color: #818c84;
 }
+
+
 
 .menu {
   background-color: #516073;
@@ -67,6 +74,36 @@ header.section-header {
   background-color: #516073;
 }
 
+/* Button Unique */
+.btn-unique, .btn-unique-reverse, .btn-unique-white {
+    color: #fff;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.1rem;
+    height: 40px;
+    background: #516073;
+    line-height: 40px !important;
+    padding: 0 20px !important;
+    text-transform: uppercase;
+    letter-spacing: 0.10em;
+    position: relative;
+    border: none;
+    text-decoration: none !important;
+    border-radius: 0 !important;
+}
+
+.btn-unique::before, .btn-unique-reverse::before, .btn-unique-white::before {
+    content: '';
+    width: calc(100% - 2px);
+    height: calc(100% - 2px);
+    border: 1px solid #fff;
+    position: absolute;
+    display: block;
+    left: 1px;
+    top: 1px;
+    text-decoration: none !important ;
+}
+
+
 /* Navbar */
 .navbar {
   padding: 0.5rem 4rem;
@@ -78,15 +115,29 @@ header.section-header {
   font-family: 'Libre Baskerville', serif;
 }
 
-.navbar-btn {
-  color: #000;
-  font-family: 'Libre Baskerville', serif;
-  border-radius: 0;
-  text-decoration: none;
-}
 
 .form-inline {
   padding-left: 1.5rem;
+}
+
+
+/* Specialty dishes section */
+.dishes {
+  background-color: #d3d9c4;
+}
+.dishes-row {
+  margin-left: 55px;
+  margin-right: 55px;
+}
+
+.dishes-card {
+  background-color: #d3d9c4;
+  border: none;
+}
+
+.card-img-top {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 /* Footer and copyright section */
