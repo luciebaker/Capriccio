@@ -38,7 +38,7 @@ section {
   font-family: 'Libre Baskerville', serif;
   font-size: 1.1rem;
   height: 40px;
-  background: #516073;
+  background: #3a6499;
   line-height: 40px !important;
   padding: 0 20px !important;
   text-transform: uppercase;
@@ -82,7 +82,7 @@ section {
   height: 600px;
   background-size: cover;
   background-position: center;
-  background-color: #516073;
+  background-color: #3a6499;
 }
 
 /* about section */
@@ -139,7 +139,7 @@ section.menu ul.nav-tabs li.nav-item a.nav-link {
 }
 
 section.menu ul.nav-tabs li.nav-item a.nav-link.active {
-  color: #7fb401;
+  color: #3a6499;
   background: none
 }
 
@@ -149,33 +149,33 @@ section.menu .tab-pane .menu-item {
 }
 
 section.menu .tab-pane .menu-item h5 {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: #333;
-  font-weight: 400;
   margin-top: 0
 }
 
 section.menu .tab-pane .menu-item p {
-  font-size: 0.85rem;
-  color: #999;
-  margin-top: 5px
+  font-size: 0.90rem;
+  color: #5e5f63;
+  margin-top: 5px;
 }
 
 section.menu .tab-pane .menu-item .item-price {
-  color: #7fb401
+  color: #3a6499;
 }
 
 section.menu .tab-pane .menu-item .item-price strong {
   display: block;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   margin-top: 5px
 }
 
 section.menu .tab-pane .menu-item.recommended {
   border-bottom: none;
-  background: #7fb401;
+  background: #3a6499;
   padding: 0 20px
 }
+
 
 section.menu .tab-pane .menu-item.recommended .item-details {
   padding: 20px 0
@@ -183,6 +183,7 @@ section.menu .tab-pane .menu-item.recommended .item-details {
 
 section.menu .tab-pane .menu-item.recommended h5, section.menu .tab-pane .menu-item.recommended p {
   color: #fff;
+  line-height: 1.5rem;
   margin-bottom: 0
 }
 
@@ -191,6 +192,13 @@ section.menu .tab-pane .menu-item.recommended .item-price {
   position: absolute;
   top: 10px;
   right: 20px
+}
+.item-price-standard {
+  text-align: right;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 1.1rem;
 }
 
 section.menu .tab-pane .menu-item.recommended .item-price strong {
@@ -215,7 +223,7 @@ section.menu .tab-pane .menu-item.recommended .item-price span {
 }
 
 .text-primary {
-  color: #7fb401 !important
+  color: #3a6499 !important
 }
 
 .has-border, section.menu .tab-pane .menu-item.recommended {
@@ -248,7 +256,7 @@ a.text-primary:hover, a.text-primary:focus {
 
 /* Events section */
 .events {
-  background-color: #516073;
+  background-color: #3a6499;
 }
 
 /* Contact section */
@@ -262,7 +270,7 @@ a.text-primary:hover, a.text-primary:focus {
 }
 
 hr {
-  border: solid #516073 6px;
+  border: solid #3a6499 6px;
   border-bottom: none;
   width: 80%;
   margin-left: 0;
@@ -280,5 +288,5 @@ hr {
 .copyright-section {
   padding-top: 50px;
   padding-bottom: 10px;
-  background-color: #516073;
+  background-color: #3a6499;
 }
