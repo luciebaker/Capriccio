@@ -16,9 +16,10 @@
   <!-- Bootstrap CSS File -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-  <!-- Libraries CSS Files -->
+  <!-- Libraries / Vendors CSS Files -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-
+  <!-- air datepicker-->
+  <link rel="stylesheet" href="vendor/air-datepicker/css/datepicker.min.css">
   <!-- Main Stylesheet File -->
   <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -55,12 +56,10 @@
           <a class="nav-link" href="#events">Events</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#contact">Contact</a>
+          <a class="nav-link" href="#contact-us">Contact</a>
         </li>
       </ul>
-      <form class="form-inline">
-        <button class="btn btn-unique navbar-btn d-none d-lg-inline-block" role="link" href="#reservation">Make a Reservation</button>
-      </form>
+      <a id="open-reservation" href="#reservation" class="btn navbar-btn btn-unique d-none d-lg-inline-block">Make a Reservation</a>
     </div>
   </nav>
   <!-- End Navbar -->
@@ -98,7 +97,7 @@
           <div class="card-body">
             <h4>Ravioli di burrata e tartufo nero</h4>
             <p class="card-text">Homemade ravioli filled with burrata cheese and black truffle, tossed in creamy
-              porcini mushrooms sauce and topped with crispy parma ham.</p>
+              porcini mushrooms sauce and topped with crispy parma ham</p>
           </div>
         </div>
       </div>
@@ -106,8 +105,8 @@
         <div class="card dishes-card">
           <img src="images/pasta1.jpg" class="card-img-top" alt="pasta">
           <div class="card-body">
-            <h4>Card Title</h4>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+            <h4>Risotto alla Catalana</h4>
+            <p class="card-text">Rich combination of mixed seafood, chicken, artichokes, black olives and garden peas in saffron sauce</p>
           </div>
         </div>
       </div>
@@ -115,8 +114,8 @@
         <div class="card dishes-card">
           <img src="images/pasta1.jpg" class="card-img-top" alt="pasta">
           <div class="card-body">
-            <h4>Card Title</h4>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+            <h4>Cannelloni ricotta e spinachi</h4>
+            <p class="card-text">Rolled pasta sheets with fillings of spinach and ricotta cheese oven baked with creamy béchamel sauce</p>
           </div>
         </div>
       </div>
@@ -565,21 +564,10 @@
               <div class="col-lg-6">
                 <div class="menu-item has-border clearfix">
                   <div class="item-details pull-left">
-                    <h5>Garlic Bread</h5>
-                    <p>Garlic butter bread, oven toasted with parsley </p>
+                    <h5>Raviolo di burrata e tartufo nero</h5>
+                    <p>Homemade ravioli filled with burrata cheese and black truffle, tossed in a creamy porcini mushrooms sauce and topped with crispy parma ham</p>
                   </div>
-                  <div class="item-price-standard pull-right"><strong class="text-large text-primary">5.90</strong>
-                  </div>
-                </div>
-              </div>
-              <!-- item-->
-              <div class="col-lg-6">
-                <div class="menu-item has-border clearfix">
-                  <div class="item-details pull-left">
-                    <h5>Piadina</h5>
-                    <p>Baked pizza dough bread flavoured with a light spread of tomato sauce, olive oil, chilli, & rosemary</p>
-                  </div>
-                  <div class="item-price-standard pull-right"><strong class="text-large text-primary">8.90</strong>
+                  <div class="item-price-standard pull-right"><strong class="text-large text-primary">32.90</strong>
                   </div>
                 </div>
               </div>
@@ -587,10 +575,10 @@
               <div class="col-lg-6">
                 <div class="menu-item has-border clearfix">
                   <div class="item-details pull-left">
-                    <h5>Grissini Parma</h5>
-                    <p>Freshly baked breadsticks wrapped with slices of succulent Italian Parma Ham </p>
+                    <h5>Risotto alla Catalana</h5>
+                    <p>Rich combination of mixed seafood, chicken, artichokes, black olives and garden peas in saffron sauce</p>
                   </div>
-                  <div class="item-price-standard pull-right"><strong class="text-large text-primary">14.80</strong><span class="text-medium"></span>
+                  <div class="item-price-standard pull-right"><strong class="text-large text-primary">25.90</strong>
                   </div>
                 </div>
               </div>
@@ -598,10 +586,21 @@
               <div class="col-lg-6">
                 <div class="menu-item has-border clearfix">
                   <div class="item-details pull-left">
-                    <h5>Bruschetta al Capriccio</h5>
-                    <p>Fresh tomato cubes seasoned with olive oil, garlic and oregano, topped on slices of oven toasted bread </p>
+                    <h5>Cannelloni ricotta e spinachi</h5>
+                    <p>Rolled pasta sheets with fillings of spinach and ricotta cheese oven baked with creamy béchamel sauce</p>
                   </div>
-                  <div class="item-price-standard pull-right"><strong class="text-large text-primary">12.90</strong>
+                  <div class="item-price-standard pull-right"><strong class="text-large text-primary">22.60</strong><span class="text-medium"></span>
+                  </div>
+                </div>
+              </div>
+              <!-- item-->
+              <div class="col-lg-6">
+                <div class="menu-item has-border clearfix">
+                  <div class="item-details pull-left">
+                    <h5>Crespelle ai fungui</h5>
+                    <p>Italian-style crepe filled with sauce of sautéed mushrooms, onions, parmesan cheese and oven baked with your choice of tomato or cream sauce</p>
+                  </div>
+                  <div class="item-price-standard pull-right"><strong class="text-large text-primary">21.90</strong>
                   </div>
                 </div>
               </div>
@@ -617,21 +616,10 @@
               <div class="col-lg-6">
                 <div class="menu-item has-border clearfix">
                   <div class="item-details pull-left">
-                    <h5>Insalata di rucola e parmigiano</h5>
-                    <p>Fresh rocket salad tossed in balsamic vinegar dressing and topped with shaved Parmesan cheese and walnuts</p>
+                    <h5>Filetto di salmone</h5>
+                    <p>Grilled juicy salmon fillet served with broccoli, potatoes and served with a touch of lemon butter sauce</p>
                   </div>
-                  <div class="item-price-standard pull-right"><strong class="text-large text-primary">17.20</strong>
-                  </div>
-                </div>
-              </div>
-              <!-- item-->
-              <div class="col-lg-6">
-                <div class="menu-item has-border clearfix">
-                  <div class="item-details pull-left">
-                    <h5>Prosciutto crudo e mozzarella</h5>
-                    <p> Italian Parma ham and fresh mozzarella cheese dressed with oregano, olive oil and olives</p>
-                  </div>
-                  <div class="item-price-standard pull-right"><strong class="text-large text-primary">18.20</strong>
+                  <div class="item-price-standard pull-right"><strong class="text-large text-primary">33.20</strong>
                   </div>
                 </div>
               </div>
@@ -639,21 +627,10 @@
               <div class="col-lg-6">
                 <div class="menu-item has-border clearfix">
                   <div class="item-details pull-left">
-                    <h5>Tagliere Misto</h5>
-                    <p>Mixed platter of imported Italian gourmet cold cuts, gourmet cheese and assorted vegetables preserved in extra virgin olive oil</p>
+                    <h5>Grigliata mista di pesce</h5>
+                    <p>Assorted seafood marinated and grilled, served with seasonal mixed grilled vegetables</p>
                   </div>
-                  <div class="item-price-standard pull-right"><strong class="text-large text-primary">24.80</strong>
-                  </div>
-                </div>
-              </div>
-              <!-- item-->
-              <div class="col-lg-6">
-                <div class="menu-item has-border clearfix">
-                  <div class="item-details pull-left">
-                    <h5>Grigliata mista di verdure</h5>
-                    <p> Assorted vegetables grilled and seasoned with black pepper, oregano and parsley and drizzled with olive oil</p>
-                  </div>
-                  <div class="item-price-standard pull-right"><strong class="text-large text-primary">16.20</strong>
+                  <div class="item-price-standard pull-right"><strong class="text-large text-primary">32.90</strong>
                   </div>
                 </div>
               </div>
@@ -669,21 +646,10 @@
               <div class="col-lg-6">
                 <div class="menu-item has-border clearfix">
                   <div class="item-details pull-left">
-                    <h5>Crocchette</h5>
-                    <p>Crispy first bite with smooth and creamy blend of real potatoes, egg, mint and parmesan cheese</p>
+                    <h5>Salcissia alla griglia</h5>
+                    <p>Italian pork sausage marinated and grilled with mixed salad, crispy potato wedges and mushroom sauce on the side</p>
                   </div>
-                  <div class="item-price-standard pull-right"><strong class="text-large text-primary">11.80</strong>
-                  </div>
-                </div>
-              </div>
-              <!-- item-->
-              <div class="col-lg-6">
-                <div class="menu-item has-border clearfix">
-                  <div class="item-details pull-left">
-                    <h5>Arancini di riso</h5>
-                    <p>Italian rice balls stuffed with heavenly mozzarella and parmesan cheese and served with arrabbiata sauce</p>
-                  </div>
-                  <div class="item-price-standard pull-right"><strong class="text-large text-primary">15.90</strong><span class="text-medium"></span>
+                  <div class="item-price-standard pull-right"><strong class="text-large text-primary">26.80</strong>
                   </div>
                 </div>
               </div>
@@ -691,21 +657,10 @@
               <div class="col-lg-6">
                 <div class="menu-item has-border clearfix">
                   <div class="item-details pull-left">
-                    <h5>Melanzane alla parmigiana</h5>
-                    <p>Juicy eggplant baked in layers of mozzarella cheese and tomato sauce</p>
+                    <h5>Costolette d'agnello</h5>
+                    <p>Oven roasted rack of lamb served with sautéed potatoes and cannellini beans</p>
                   </div>
-                  <div class="item-price-standard pull-right"><strong class="text-large text-primary">14.90</strong>
-                  </div>
-                </div>
-              </div>
-              <!-- item-->
-              <div class="col-lg-6">
-                <div class="menu-item has-border clearfix">
-                  <div class="item-details pull-left">
-                    <h5>Calamari fritti</h5>
-                    <p>Squid rings crispy fried in batter, served with spicy Italian tomato sauce</p>
-                  </div>
-                  <div class="item-price-standard pull-right"><strong class="text-large text-primary">15.90</strong>
+                  <div class="item-price-standard pull-right"><strong class="text-large text-primary">34.90</strong><span class="text-medium"></span>
                   </div>
                 </div>
               </div>
@@ -723,7 +678,7 @@
                     <h5>Red wines</h5>
                   </div>
                   <div class="item-price pull-right"><strong class="text-large text-primary">glass/bottle</strong>
-                    </div>
+                  </div>
                 </div>
               </div>
               <!-- item-->
@@ -777,7 +732,7 @@
                     <h5>Rose wines</h5>
                   </div>
                   <div class="item-price pull-right"><strong class="text-large text-primary">glass/bottle</strong>
-                    </div>
+                  </div>
                 </div>
               </div>
               <!-- item-->
@@ -809,7 +764,7 @@
                     <h5>White wines</h5>
                   </div>
                   <div class="item-price pull-right"><strong class="text-large text-primary">glass/bottle</strong>
-                    </div>
+                  </div>
                 </div>
               </div>
               <!-- item-->
@@ -844,14 +799,60 @@
   <!-- End Menu Section-->
 
   <!-- Reservation section -->
-  <section id="reservation" class="reservation">
+  <!-- <section id="reservation" class="reservation">
     <div class="container text-center">
       <header class=section-header>
         <h2>Make a Reservation</h2>
         <h3>Join us for lunch or dinner.</h3>
       </header>
     </div>
+  </section> -->
+  <section id="reservation" class="reservation">
+    <div class="container text-center">
+      <header>
+        <h2>Make a Reservation</h2>
+      </header>
+      <div class="row">
+        <div class="form-holder col-lg-10 mx-auto text-center">
+          <!--<div class="ribbon"><i class="fa fa-star"></i></div>-->
+          <form id="reservation-form" method="get" action="#">
+            <div class="row">
+              <div class="col-lg-10 mx-auto">
+                <div class="row">
+                  <label for="name" class="col-md-6 unique">Name
+                    <input id="name" name="name" type="text" required="">
+                  </label>
+                  <label for="email" class="col-md-6 unique">Email
+                    <input id="email" name="email" type="email" required="">
+                  </label>
+                  <label for="number" class="col-md-6 unique">Contact Number
+                    <input id="number" name="number" type="text" required="">
+                  </label>
+                  <label for="people" class="col-md-6 unique">How many People?
+                    <input id="people" name="people" type="number" min="1" required="">
+                  </label>
+                  <label for="date" class="col-md-6 unique">Date
+                    <input id="date" name="date" type="text" data-language="en" required="" class="datepicker-here">
+                  </label>
+                  <label for="time" class="col-md-6 unique">Time
+                    <input id="time" name="time" type="text" required="" class="timepicker">
+                  </label>
+                  <label for="request" class="col-md-12 unique">Special Request
+                    <textarea id="request" name="request"></textarea>
+                  </label>
+                  <div class="col-md-12">
+                    <button type="submit" class="btn-unique">Reserve my table</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
   </section>
+
+
   <!-- End Reservation section -->
 
   <!-- Upcoming events section-->
@@ -923,10 +924,15 @@
   </section>
   <!-- End Copyright section -->
 
+
+
   <!-- JavaScript Libraries -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <!-- Other JS Files -->
+  <script src="vendor/air-datepicker/js/datepicker.min.js"></script>
+  <script src="vendor/air-datepicker/js/i18n/datepicker.en.js"></script>
   <!-- Template Main Javascript File -->
 </body>
 
