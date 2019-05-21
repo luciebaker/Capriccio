@@ -19,7 +19,10 @@
   <!-- Libraries / Vendors CSS Files -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
   <!-- air datepicker-->
-  <link rel="stylesheet" href="vendor/air-datepicker/css/datepicker.min.css">
+  <link href="dist/css/datepicker.min.css" rel="stylesheet" type="text/css">
+  <script src="dist/js/datepicker.min.js"></script>
+          <!-- Include English language -->
+          <script src="dist/js/i18n/datepicker.en.js"></script>
   <!-- Main Stylesheet File -->
   <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -835,7 +838,7 @@
                     <input id="date" name="date" type="text" data-language="en" required="" class="datepicker-here">
                   </label>
                   <label for="time" class="col-md-6 unique">Time
-                    <input id="time" name="time" type="text" required="" class="timepicker">
+                    <input id="time" name="time" type="text" required="" class="timepicker" data-language='en' data-position='top left'>
                   </label>
                   <label for="request" class="col-md-12 unique">Special Request
                     <textarea id="request" name="request"></textarea>
