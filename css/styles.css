@@ -389,12 +389,13 @@ label.unique.active input, label.unique.active textarea {
   border-color: #3a6499 !important
 }
 
+
 label.unique input, label.unique textarea {
   border-bottom: 2px solid #3a6499 !important;
   max-height: 200px;
   font-size: 1.3em;
   resize: vertical;
-  padding: 10px 0;
+  padding: 10px 10px;
   display: block;
   border: none;
   width: 100%;
