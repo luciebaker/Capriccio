@@ -73,12 +73,12 @@ section {
 }
 
 .btn-unique-white {
-  color: #7fb401;
+  color: #3a6499;
   background: #fff;
 }
 
 .btn-unique-white::before {
-  border-color: #7fb401;
+  border-color: #3a6499;
 }
 
 .btn-unique-white:hover, .btn-unique-white:focus {
@@ -275,7 +275,7 @@ section.menu .tab-pane .menu-item.recommended .item-price span {
 
 
 a.text-primary:hover, a.text-primary:focus {
-  color: #5b8101 !important
+  color: #3a6499 !important
 }
 
 
