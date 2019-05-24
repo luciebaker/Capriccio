@@ -103,6 +103,11 @@ section {
   font-family: 'Libre Baskerville', serif;
 }
 
+.nav-item.active {
+  color: #3a6499;
+  border-color: #3a6499;
+}
+
 .form-inline {
   padding-left: 1.5rem;
 }
@@ -435,7 +440,7 @@ form button {
 }
 
 hr {
-  border: solid #3a6499 6px;
+  border: solid #3a6499 4px;
   border-bottom: none;
   width: 80%;
   margin-left: 0;
@@ -450,8 +455,20 @@ hr {
   line-height: 1.7rem;
 }
 
+.form-group {
+  margin-bottom: 0;
+}
+
+button.btn.btn-unique {
+  margin-top: 15px;
+}
+
 .copyright-section {
   padding-top: 50px;
   padding-bottom: 10px;
   background-color: #3a6499;
+}
+
+.copyright-section a {
+  color: #818c84;
 }
